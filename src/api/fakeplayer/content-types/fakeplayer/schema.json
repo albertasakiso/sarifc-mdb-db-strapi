@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fakeplayers",
+  "info": {
+    "singularName": "fakeplayer",
+    "pluralName": "fakeplayers",
+    "displayName": "fakeplayer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fakeplayerimage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "integer",
+      "required": true
+    },
+    "biography": {
+      "type": "richtext",
+      "required": true
+    },
+    "contractstart": {
+      "type": "date",
+      "required": true,
+      "default": "2022-01-01"
+    },
+    "contractend": {
+      "type": "date",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
